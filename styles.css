@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.main{
+    min-width: 1440px;
+    width: 100%;
+    /* min-height: 1024px; */
+    min-height: 100vh;
+    
+    
+    background-color:#9CB20D;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.child{
+    max-width:1328px;
+    width: 100%;
+    /* min-height: 604px; */
+    height: 85vh;
+    background-color: #D0EE11;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.heading{
+    position: absolute;
+    left: 0; 
+    padding-left: 80px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+}
+.para{
+    padding-bottom: 50px;
+}
+.heading img{
+    padding-top: 50px;
+}
+.heading p{
+    font-family: roboto;
+    font-size: 50px;
+    font-weight: 400;
+    color: #333333;
+}
+#subs{
+    font-weight:900 ;
+}
+.details{
+    width: 860px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 45px;
+    border-top-left-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details_child{
+    width:575px ;
+    height: 438px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+.detailChild-1{
+flex: 35%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.signup-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.detailChild-2{
+    flex: 15%;
+}
+.detailChild-2{
+    flex: 50%;
+}
+
+
+.input_field{
+    margin: 31px auto;
+    width: 100%;
+    padding: 10px 0 5px 0;
+    border-bottom: 1px solid #9D9D9D;
+}
+.input_field input{
+    width: 90%;
+    border: none;
+    outline: none;
+    background:transparent;
+    padding: 20px 0;
+}
+.Login-btn button{
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #D0EE11;
+    border: none;
+}
+.signIn p{
+    font-size: 30px;
+    padding-top: 40px;
+    font-weight: 900;
+}
+.Login-btn button{
+    font-weight: 900;
+    font-size: 16px;
+    color: #333333;
+}
+.Sign-up-here{
+    text-align: center;
+    padding-top: 20px;
+    font-family: Roboto;
+    color: #333333;
+}
+.Sign-up-here span a{
+    text-decoration: none;
+    color: #5B86E5;
+}
+
+@media (max-width:767px){
+    .main{
+        background-color: #D0EE11;
+        height: 100vh;
+    }
+    
+    .heading{
+        display: none;
+        
+    }
+    .child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .details{
+        width: 56%;
+        border-radius: 45px;
+        /* border: 2px solid black; */
+        margin-right: 22%;
+        /* margin: 0 30%; */   
+       
+    }
+    .details_child{
+        /* box-shadow: 5px 5px 5px 5px #D0EE11; */
+        /* box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.15); */
+        padding: 10px;
+        border-radius: 45px;
+    }
+}
